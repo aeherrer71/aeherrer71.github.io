@@ -4,7 +4,8 @@ body {
   font-family: 'Roboto Slab', serif;
   background: black;
   color: white;
-  height: 100vh;
+  display: flex;
+  height: 80vh;
   display: flex;
   align-items: flex-start;
 
@@ -34,6 +35,9 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
+  margin-top: 0;
+  padding: 10px;
 }
 
 h2 {
@@ -90,34 +94,61 @@ p {
   background-image: url("Airbnb.jpg");
 }
 
+
 @media (max-width: 700px) {
   body {
     height: auto;
     max-width: 100%;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 10px;
+
+  }
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  img {
+    height: 100px;
+    width: 100px;
   }
 
   .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .aboutme-container {
     display: flex;
     flex-direction: column;
-    max-width: 100%
+    width: min-content;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
   }
 
   .profile-container {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    width: fit-content;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-size: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
 
   }
 
+  p {
+    font-size: 10px;
+  }
 
 }
