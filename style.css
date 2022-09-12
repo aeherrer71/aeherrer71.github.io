@@ -1,0 +1,123 @@
+body {
+  font-family: 'Lily Script One', cursive;
+  font-family: 'Londrina Shadow', cursive;
+  font-family: 'Roboto Slab', serif;
+  background: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 70%;
+}
+
+a {
+  color: white;
+}
+
+.wrapped {
+  float: left;
+  padding: 10px 15px 0px 80px;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 0;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  border-top: 1px solid white;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.aboutme-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  margin-left: 150px;
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  color: white;
+  background-size: cover;
+  margin: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: unset;
+  font-size: large;
+}
+
+.box-1 {
+  background-image: url("Derma-Depot.jpg");
+}
+
+.box-2 {
+  background-image: url("Wendy-Bite.jpg");
+
+}
+
+.box-3 {
+  background-image: url("Airbnb.jpg");
+}
+
+@media (max-width: 700px) {
+  body {
+    height: auto;
+    max-width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutme-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%
+  }
+
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+
+}
